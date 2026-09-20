@@ -1,4 +1,9 @@
 package factorymethod;
 
-public class RoadLogistics {
+public class RoadLogistics extends AbstractLogistics {
+
+    @Override
+    public Transport createTransport() {
+        return new Truck();
+    }
 }
